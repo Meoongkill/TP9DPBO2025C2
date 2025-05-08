@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD MVP PHP</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div class="card">
+        <div class="card-header bg-primary text-white">
+          <h3>DATA_JUDUL</h3>
+        </div>
+        <div class="card-body">
+          <form action="process.php" method="POST">
+            <input type="hidden" name="action" value="DATA_ACTION" />
+            <input type="hidden" name="id" value="DATA_ID" />
+
+            <div class="form-group row">
+              <label for="nim" class="col-sm-2 col-form-label">NIM</label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nim"
+                  name="nim"
+                  value="DATA_NIM"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nama"
+                  name="nama"
+                  value="DATA_NAMA"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="tempat" class="col-sm-2 col-form-label"
+                >Tempat Lahir</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="tempat"
+                  name="tempat"
+                  value="DATA_TEMPAT"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="tl" class="col-sm-2 col-form-label"
+                >Tanggal Lahir</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="date"
+                  class="form-control"
+                  id="tl"
+                  name="tl"
+                  value="DATA_TL"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">Jenis Kelamin</label>
+              <div class="col-sm-10">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="laki"
+                    value="Laki-laki"
+                    DATA_LAKI
+                    required
+                  />
+                  <label class="form-check-label" for="laki">Laki-laki</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="perempuan"
+                    value="Perempuan"
+                    DATA_PEREMPUAN
+                  />
+                  <label class="form-check-label" for="perempuan"
+                    >Perempuan</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="email" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  value="DATA_EMAIL"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="telp" class="col-sm-2 col-form-label">Telepon</label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="telepon"
+                  name="telepon"
+                  value="DATA_TELP"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-primary">Simpan</button>
+                <a href="index.php" class="btn btn-secondary">Kembali</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
